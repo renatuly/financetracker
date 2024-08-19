@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Finance Management</h1>
+        
+        <div class="form-container">
+            <h2>Add Expense</h2>
+            <form id="expense-form">
+                <label for="description">Description:</label>
+                <input type="text" id="description" required>
+                
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+                
+                <button type="submit">Add Expense</button>
+            </form>
+        </div>
+
+        <div class="expenses-container">
+            <h2>Expenses</h2>
+            <ul id="expense-list"></ul>
+        </div>
+        
+        <div class="summary-container">
+            <h2>Summary</h2>
+            <p>Total Expenses: <span id="total-expenses">₸0.00</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
